@@ -1,0 +1,25 @@
+Console.WriteLine("Vvedite 3 storoni pervogo treugolnika");
+double pervayastoronapervogotreugolnika = Convert.ToDouble(Console.ReadLine());
+double vtorayastoronapervogotreugolnika = Convert.ToDouble(Console.ReadLine());
+double tretiastoronapervogotreugolnika = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Vvedite 3 storoni vtorogo treugolnika");
+double pervayastoronavtorogotreugolnika = Convert.ToDouble(Console.ReadLine());
+double vtorayastoronavtorogotreugolnika = Convert.ToDouble(Console.ReadLine());
+double tretiastoronavtorogotreugolnika = Convert.ToDouble(Console.ReadLine());
+double P1 = (pervayastoronavtorogotreugolnika + vtorayastoronapervogotreugolnika + tretiastoronapervogotreugolnika);
+double P2 = (pervayastoronavtorogotreugolnika + vtorayastoronavtorogotreugolnika + tretiastoronavtorogotreugolnika);
+
+double p1 = (P1 / 2);
+double p2 = (P2 / 2);
+double S1 = Math.Sqrt(p1 * (p1 - pervayastoronapervogotreugolnika) * (p1 - vtorayastoronapervogotreugolnika) * (p1 - vtorayastoronapervogotreugolnika) * (p1 - tretiastoronapervogotreugolnika));
+double S2 = Math.Sqrt(p2 * (p2 - pervayastoronavtorogotreugolnika) * (p2 - vtorayastoronavtorogotreugolnika) * (p2 - vtorayastoronavtorogotreugolnika) * (p2 - tretiastoronavtorogotreugolnika));
+if (S1 == S2)
+{
+Console.WriteLine("treugolniki ravnovelikie");
+}
+else
+{
+Console.WriteLine("treugolniki ne ravnovelikie");
+}
+Console.ReadLine();
